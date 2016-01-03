@@ -18,5 +18,18 @@ float fct(float x,float y);
 void exercice_surcharge();
 void inverse(int& a,int& b);
 void inverse(int* a,int* b);
+namespace TD1 {
+  struct essai {
+    int n;
+    float x;
+    void raz() {
+      n = 0;
+      x = 0;
+    }
+  };
+}
+void raz(TD1::essai* e);
+void raz(TD1::essai& e);
+
 
 #endif

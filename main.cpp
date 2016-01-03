@@ -29,5 +29,24 @@ double* pt1;// = 4096;
   inverse(a_,b_);
   inverse(a,b);
   cout<<"a:"<<*a<<" "<<"b:"<<*b<<"\n";
+  using namespace TD1;
+  essai essai1;
+  essai1.n = 1;
+  essai1.x = 2.2;
+  cout<<"n:"<<essai1.n<<" "<<"x"<<" "<<essai1.x<<"\n";
+  essai1.raz();
+  cout<<"n:"<<essai1.n<<" "<<"x"<<" "<<essai1.x<<"\n";
+  essai1.n=1;
+  essai1.x=2.2;
+  cout<<"n:"<<essai1.n<<" "<<"x"<<" "<<essai1.x<<"\n";
+  raz(&essai1);
+  cout<<"n:"<<essai1.n<<" "<<"x"<<" "<<essai1.x<<"\n";
+  essai1.n=1;
+  essai1.x=2.2;
+  cout<<"n:"<<essai1.n<<" "<<"x"<<" "<<essai1.x<<"\n";
+  raz(essai1);
+  cout<<"n:"<<essai1.n<<" "<<"x"<<" "<<essai1.x<<"\n";
+
+
   return 0;
 }

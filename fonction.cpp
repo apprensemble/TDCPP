@@ -72,3 +72,9 @@ void inverse(int* a,int* b) {
   *a = *b;
   *b = tmp;
 }
+void raz(TD1::essai* e) {
+  e->n=0; e->x=0;
+}
+void raz(TD1::essai& e) {
+  e.n=0;e.x=0;
+}
