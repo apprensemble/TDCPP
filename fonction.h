@@ -2,6 +2,7 @@
 #define _FONCTION_H
 #include<iostream>
 #include<string>
+#include <stdlib.h>
 namespace anglais {
   void bonjour(); 
 }
@@ -47,6 +48,7 @@ struct point {
   void init(point* pt, int _x);
   void init(point* pt);
   */
+
   void essai_init();   
   void essai_alloc();
 #endif

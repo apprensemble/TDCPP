@@ -22,8 +22,8 @@ void anglais::bonjour() {
 }
 
 //int fct(int x) {
-  //cout<<"1:"<<x<<"\n";
-  //return 0;
+//cout<<"1:"<<x<<"\n";
+//return 0;
 //}
 int fct(float y) {
   cout<<"2:"<<y<<"\n";
@@ -44,7 +44,7 @@ int fct(int x,double y) {
   cout<<"6:"<<x<<"  "<<y<<"\n";
 }
 float fct(float x,float y) {
-    cout<<"7:"<<x<<"  "<<y<<"\n";
+  cout<<"7:"<<x<<"  "<<y<<"\n";
 }
 
 
@@ -78,17 +78,17 @@ void raz(TD1::essai* e) {
 void raz(TD1::essai& e) {
   e.n=0;e.x=0;
 }
-  //exercice 14
-  void truc1(const int& x) {
-    std::cout<<x<<"\n";
-    //x++;
-    //std::cout<<x<<"\n";
-  }
+//exercice 14
+void truc1(const int& x) {
+  std::cout<<x<<"\n";
+  //x++;
+  //std::cout<<x<<"\n";
+}
 void truc2(int& x) {
   x++;
   truc1(x);
   x++;
-    std::cout<<"xtd2:"<<x<<"\n";
+  std::cout<<"xtd2:"<<x<<"\n";
 }
 void truc3(const int& x) {
   //truc2(x);
@@ -97,30 +97,32 @@ void truc3(const int& x) {
   double& u=y;
   //double& t=y-3;
 }
-  void init(point& pt, int _x, int _y, int _z) {
-    pt.x=_x;
-    pt.y=_y;
-    pt.z=_z;
-  }
+void init(point& pt, int _x, int _y, int _z) {
+  pt.x=_x;
+  pt.y=_y;
+  pt.z=_z;
+}
+
 /*
-  void init(point* pt, int _x,int _y) {
-    pt->x=_x;
-    pt->y=_y;
-    pt->z=0;
-  }
+   void init(point* pt, int _x,int _y) {
+   pt->x=_x;
+   pt->y=_y;
+   pt->z=0;
+   }
 
-  void init(point* pt, int _x) {
-    pt->x=_x;
-    pt->y=0;
-    pt->z=0;
-  }
+   void init(point* pt, int _x) {
+   pt->x=_x;
+   pt->y=0;
+   pt->z=0;
+   }
 
-  void init(point* pt) {
-    pt->x=0;
-    pt->y=0;
-    pt->z=0;
-  }
-*/
+   void init(point* pt) {
+   pt->x=0;
+   pt->y=0;
+   pt->z=0;
+   }
+   */
+
   void essai_init() {
     point p;
     init(p);
@@ -128,13 +130,12 @@ void truc3(const int& x) {
     init(p,1,2);
     init(p,1,2,3);
   }
-/*
-  void essai_alloc() {
-    int* pt_int;
-    double* pt_double;
-    pt_int=(int*) malloc(sizeof(int));
-    pt_double(double*) malloc(sizeof(double)*100);
-    free(pt_int);
-    free(pt_double);
-  }
-  */
+
+void essai_alloc() {
+  int* pt_int;
+  double* pt_double;
+  pt_int=(int*)malloc(sizeof(int));
+  pt_double=(double*)malloc(sizeof(double)*100);
+  free(pt_int);
+  free(pt_double);
+}
