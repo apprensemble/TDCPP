@@ -78,3 +78,22 @@ void raz(TD1::essai* e) {
 void raz(TD1::essai& e) {
   e.n=0;e.x=0;
 }
+  //exercice 14
+  void truc1(const int& x) {
+    std::cout<<x<<"\n";
+    //x++;
+    //std::cout<<x<<"\n";
+  }
+void truc2(int& x) {
+  x++;
+  truc1(x);
+  x++;
+    std::cout<<"xtd2:"<<x<<"\n";
+}
+void truc3(const int& x) {
+  //truc2(x);
+  double y=x;
+  //double& z=x;
+  double& u=y;
+  //double& t=y-3;
+}

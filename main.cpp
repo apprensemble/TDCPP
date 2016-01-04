@@ -47,6 +47,12 @@ double* pt1;// = 4096;
   raz(essai1);
   cout<<"n:"<<essai1.n<<" "<<"x"<<" "<<essai1.x<<"\n";
 
+  int ent = 1;
+
+  truc1(ent);
+  truc2(ent);
+
+
 
   return 0;
 }

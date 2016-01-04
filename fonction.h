@@ -31,5 +31,7 @@ namespace TD1 {
 void raz(TD1::essai* e);
 void raz(TD1::essai& e);
 
+void truc1(const int& x) ;
 
+void truc2(int& x) ;
 #endif
