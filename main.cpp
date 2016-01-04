@@ -52,6 +52,11 @@ double* pt1;// = 4096;
   truc1(ent);
   truc2(ent);
 
+  cout<<"----------\n\n";
+
+
+    
+
 
 
   return 0;

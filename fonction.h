@@ -34,4 +34,19 @@ void raz(TD1::essai& e);
 void truc1(const int& x) ;
 
 void truc2(int& x) ;
+
+struct point {
+  int x;
+  int y;
+  int z;
+};
+
+  void init(point& pt, int _x=0, int _y=0, int _z=0);
+  /* les nouvelles possibilités offerte par le c++ sont les valeurs par defaut et l'envoie d'arg par reference 
+  void init(point* pt, int _x,int _y);
+  void init(point* pt, int _x);
+  void init(point* pt);
+  */
+  void essai_init();   
+  void essai_alloc();
 #endif
